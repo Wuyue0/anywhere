@@ -4,6 +4,7 @@ build/
 *.log
 logs
 *.swp
+.vscode
 
 
 # 具体查看gitignore 网站的规则
