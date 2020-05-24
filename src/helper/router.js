@@ -16,7 +16,7 @@ module.exports = async function (req,res,filePath){
     if(stats.isFile()){
       const contentType = mime(filePath);
       res.statusCode = 200;
-      res.setHeader('Content-Type',contentType);
+      res.setHeader('Content-Type',contentType.type);
       fs.createReadStream(filePath).pipe(res);
     }else if(stats.isDirectory()){
       const files = await readdir(filePath);
@@ -26,7 +26,12 @@ module.exports = async function (req,res,filePath){
       const data = {
         title: path.basename(filePath),
         dir: dir? `/${dir}`: '',
-        files
+        files: files.map(file=>{
+          return {
+            file,
+            mime: mime(file)
+          }
+        })
       }
       res.end(template(data));
     }
