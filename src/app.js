@@ -5,7 +5,6 @@ const path = require('path');
 const route = require('./helper/router');
 const server = http.createServer((req,res)=>{
   const filePath = path.join(conf.root,req.url);
-  console.log(filePath)
   route(req,res,filePath);
 })
 
