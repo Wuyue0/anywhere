@@ -7,3 +7,6 @@ fs.watch('./',{
     console.log(eventType , filename);
     
 })
+
+
+console.log(1111)

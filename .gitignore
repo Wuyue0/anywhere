@@ -5,7 +5,3 @@ build/
 logs
 *.swp
 .vscode
-
-
-# 具体查看gitignore 网站的规则
-# https://github.com/Wuyue0/anywhere/tree/master

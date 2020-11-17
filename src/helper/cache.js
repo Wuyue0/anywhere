@@ -1,7 +1,5 @@
 const { cache } =require('../config/defaultConfig')
 
-
-
 function refreshRes(stats,res){
     const { maxAge , expiress , cacheControl , lastModified , etag } = cache
 

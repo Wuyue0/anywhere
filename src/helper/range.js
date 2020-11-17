@@ -1,5 +1,4 @@
 module.exports = (totalSize,req,res)=>{
-    console.log('接收的range',req.headers['range'])
     const range = req.headers['range'];
     if(!range){
         return {

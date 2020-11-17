@@ -8,10 +8,10 @@ module.exports = {
   "parser": "babel-eslint",
   "parserOptions":{
     "ecmaVersion": 6,
-    "sourceType": "script"
+    "sourceType": "module",
   },
   "globals": {
-   // "window": true
+   "window": true
   },
   "env": {
     "node": true,
