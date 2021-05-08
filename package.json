@@ -58,7 +58,7 @@
     "chalk": "^4.0.0",
     "del": "^6.0.0",
     "gulp-less": "^4.0.1",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "yargs": "^16.1.0"
